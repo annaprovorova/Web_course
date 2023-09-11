@@ -1,0 +1,18 @@
+body {
+	background-color: gray!important;;
+}
+div a{
+	background-color: green;
+	color: yellow;
+	}
+
+#cat {
+	background-image: url(cat.jpeg); 
+	height:100px; 
+	background-size:cover;
+	}
+
+.new_font{
+	color: white;
+	font-size: 32pt;
+}
