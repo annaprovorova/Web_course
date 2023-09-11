@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    let inputs = 0;
+
+    function addContact() {
+      let table = document.getElementById("contacts");
+      let tr = document.createElement("TR");
+      let td1 = document.createElement("TD");
+      let td2 = document.createElement("TD");
+      let td3 = document.createElement("TD");
+      let new_name = document.createElement("p");
+      let new_email = document.createElement("p");
+      inputs++;
+      if (inputs > 0) {
+        let img = document.createElement('IMG');
+        img.setAttribute('src', 'delete.gif');
+        img.setAttribute('width', '10%');
+        img.onclick = function() {
+          removeContact(tr);
+        }
+        td3.appendChild(img);
+      }
+      new_name.textContent = "Name" + inputs;
+      new_email.textContent = "Email" + inputs;
+      table.appendChild(tr);
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      td1.appendChild(new_name);
+      td2.appendChild(new_email);
+    }
+
+    function removeContact(tr) {
+      tr.parentNode.removeChild(tr);
+    }
+  </script>
+</head>
+
+<body>
+  <table>
+    <tbody id="contacts">
+      <tr>
+        <td colspan="3">
+          <button onclick="javascript:addContact();">Добавить контакт</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Name </td>
+        <td>Email</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

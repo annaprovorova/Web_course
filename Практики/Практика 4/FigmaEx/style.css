@@ -1,0 +1,49 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-lilac {
+    width: 234px;
+    height: 60px;
+    background: #9B9BCA;
+    border-radius: 10px;
+    border: 0;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.btn-lilac:hover {
+    background: #9e75cc;
+}
+
+.headerBG {
+  height: 737px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/table.png");
+}
+.content{
+  margin-top: 200px;
+}
+.cards {
+  height: 800px;
+  width:100%;
+}
+
+.cards .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  .text {
+    text-align: center;
+  }

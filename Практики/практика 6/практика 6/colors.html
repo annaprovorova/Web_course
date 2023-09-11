@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function setColors(tbody, color1, color2){
+        var colors  = [color1, color2];
+        let k = 0;
+        for(var i=0; i<tbody.childNodes.length; i++){
+          if (tbody.childNodes[i].tagName == 'TR') {
+          tbody.childNodes[i].style.backgroundColor = colors[k % 2];
+          k ++;
+         }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <table >
+      <tbody id='tab'>
+        <tr>
+          <td>First row</td>
+        </tr>
+        <tr>
+          <td>Second row</td>
+        </tr>
+        <tr>
+          <td>Third row</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="javascript:setColors(tab, 'red', 'green');" >Color it! </button>
+  </body>
+</html>

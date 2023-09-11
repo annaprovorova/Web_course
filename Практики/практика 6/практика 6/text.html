@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div id="ourTest">this is <a href="link.png">a link</a> and an image: <img src="link.png"></div>
+    <script type="text/javascript">
+      var newText = document.createTextNode('our new text');
+      var ourDiv  = document.getElementById('ourTest');
+      ourDiv.insertBefore(newText, ourDiv.childNodes[1]);
+    </script>
+  </body>
+</html>
