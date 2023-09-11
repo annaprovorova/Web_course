@@ -1,0 +1,22 @@
+.old_font{
+  font-size: 14px;
+}
+.new_font{
+  font-size: 1.5em;
+}
+body {
+  background-color: white;
+}
+.new_color{
+  background-color: rgba(0, 100, 200, .5);
+  font-size: 34px;
+  left: 3%;
+  top: 50px;
+}
+.new_color a{
+  color: green;
+}
+
+#new_id {
+  background-color: pink;
+}
